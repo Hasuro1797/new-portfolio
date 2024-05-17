@@ -5,6 +5,7 @@
 :root {
   --Primario-Primario-950: #222749;
   --Secundario-400: #43D9BC;
+  --Primario-200: #CAD8F3;
 }
 body{
   background-color: var(--Primario-Primario-950);
@@ -14,8 +15,24 @@ body{
   box-shadow: 4px -2px 60px 10px rgba(0, 0, 0, 0.60);
 }
 
+.arrow-click{
+  transform: rotate(90deg);
+  color: var(--Primario-200);
+  transition: ease-in 200ms;
+}
+.fileIcon{
+  transform: translateX(0);
+  transition: ease-in-out all 200ms;
+}
 .download-container:hover .arrow-click {
   rotate: -45deg;
+  color: var(--Secundario-400);
+}
+.download-container:hover .fileIcon{
+  transform: translateX(-20px);
+}
+
+.social-container:hover .social-icon{
   color: var(--Secundario-400);
   transition: ease-in 200ms;
 }

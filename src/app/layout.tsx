@@ -17,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+      <footer className="w-full flex justify-center items-center py-8 px-4">
+        <span className="text-center text-[14px] text-primary-200 font-medium ">© 2024 Manuel Villarroel. Todos los derechos reservados.</span>
+      </footer>
+      </body>
     </html>
   );
 }
