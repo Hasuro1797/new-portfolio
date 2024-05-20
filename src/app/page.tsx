@@ -15,7 +15,7 @@ import EducationSection from "./components/EducationSection";
 export default function Home() {
   return (
     <main className="min-h-screen flex justify-center py-10">
-    <section className="w-full max-w-[1536px] grid grid-cols-6 xl:grid-cols-8 gap-8 md:px-8 lg:px-20">
+    <section className="w-full max-w-[1536px] grid grid-cols-6 xl:grid-cols-8 gap-2 xs:gap-4 lg:gap-6 px-4 md:px-8 lg:px-20">
       {/* <div className="col-start-1 col-end-7 row-start-1 row-end-5 bg-red-200 rounded-lg">1</div> */}
       <Profile/>
       <Language/>
