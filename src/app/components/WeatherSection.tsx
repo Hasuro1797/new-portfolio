@@ -17,3 +17,4 @@ export default function WeatherSection() {
     <div className='col-start-1 col-end-4 bg-red-500 rounded-2xl'>WeatherSection</div>
   )
 }
+
