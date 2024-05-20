@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Profile from "./components/Profile";
 import Language from "./components/Language";
 import DownloadCV from "./components/DownloadCV";
@@ -10,11 +11,13 @@ import WorkExperience from "./components/WorkExperience";
 import LanguageCertification from "./components/LanguageCertification";
 import SkillComponent from "./components/SkillComponent";
 import EducationSection from "./components/EducationSection";
+import WeatherSection from "./components/WeatherSection";
+import ExperienceCard from "./components/ExperienceCard";
 
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-center py-10">
+    <main className="min-h-screen flex justify-center py-4 sm:py-10">
     <section className="w-full max-w-[1536px] grid grid-cols-6 xl:grid-cols-8 gap-2 xs:gap-4 lg:gap-6 px-4 md:px-8 lg:px-20">
       {/* <div className="col-start-1 col-end-7 row-start-1 row-end-5 bg-red-200 rounded-lg">1</div> */}
       <Profile/>
@@ -39,10 +42,8 @@ export default function Home() {
       <Projects/>
       <WorkExperience/>
       <LanguageCertification/>
+      <ExperienceCard/>
       {/* <div className="col-start-5 col-end-7 bg-primary shadow-container aspect-square rounded-2xl ">11</div> */}
-      <SkillComponent position="col-start-1 col-end-3 xl:col-start-7 xl:col-end-9">
-        <img src="/assets/icons/skills_front_end.png" className="w-full" alt="icons-fron end" />
-      </SkillComponent>
       <EducationSection/>
       <SkillComponent position="col-start-1 col-end-3 xl:col-start-5 xl:col-end-7">
         <img src="/assets/icons/skill_back_end.png" className="w-full" alt="icons back end" />
@@ -50,7 +51,11 @@ export default function Home() {
       <SkillComponent position="col-start-3 col-end-5 xl:col-start-7 xl:col-end-9">
         <img src="/assets/icons/programing_languages.png" className="w-full" alt="icons-fron end" />
       </SkillComponent>
+      <SkillComponent position="col-start-5 col-end-7 xl:col-start-1 xl:col-end-3">
+        <img src="/assets/icons/skills_front_end.png" className="w-full" alt="icons-fron end" />
+      </SkillComponent>
       {/* <div className="col-start-7 col-end-9 bg-red-500 rounded-lg">12</div> */}
+      <WeatherSection/>
     </section>
   </main>
   );

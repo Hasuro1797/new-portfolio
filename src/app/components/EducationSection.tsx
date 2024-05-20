@@ -8,14 +8,14 @@ export default function EducationSection() {
         <img src="/assets/images/education.webp" alt="image position" className='w-full absolute -top-[50%] left-0'/>
       </div>
       <div className='flex flex-col justify-between h-full bg-primary/60 relative z-10'>
-        <div className='flex justify-end p-4'>
-          <div className='w-10 h-10'>
-            <BsArrowUpCircle className='text-[40px] arrow-click'/>
+        <div className='flex justify-end px-2 pt-2 xs:px-4 xs:pt-4'>
+          <div className=''>
+            <BsArrowUpCircle className='text-[24px] xs:text-[30px] sm:text-[40px] arrow-click'/>
           </div>
         </div>
-        <div className='p-8 gap-3 flex flex-col'>
-          <h3 className='text-titleH3 text-secondary leading-normal font-bold'>Educación</h3>
-          <p className='text-paragraph text-primary-200 font-bold leading-normal'>Mi viaje educativo es más que solo adquirir conocimientos; es una travesía hacia el crecimiento personal y profesional</p>
+        <div className='px-2 pb-2 xs:px-4 xs:pb-4 lg:px-8 lg:pb-8 sm:gap-2 md:gap-3 flex flex-col'>
+          <h3 className='xs:text-[24px] sm:text-titleH3 text-secondary leading-normal font-bold'>Educación</h3>
+          <p className='text-[12px] xs:text-[16px] sm:text-paragraph text-primary-200 font-medium line-clamp-2 sm:line-clamp-none leading-normal'>Mi viaje educativo es más que solo adquirir conocimientos; es una travesía hacia el crecimiento personal y profesional</p>
         </div>
       </div>
     </div>

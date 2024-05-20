@@ -20,8 +20,8 @@ export default function DownloadCV() {
             <BsArrowUpCircle className='text-[24px] xs:text-[30px] sm:text-[40px] arrow-click'/>
         </div>
         <div className='self-stretch px-2 pb-2 xs:px-4 xs:pb-4 lg:px-8 lg:pb-8 relative z-10'>
-          <span className='text-secondary hidden xs:block  xs:text-[18px] sm:text-[24px] md:text-titleH3 font-bold leading-normal text-pretty'>Averigua más sobre mí</span>
-          <span className='text-secondary block xs:hidden xs:text-[18px] sm:text-[24px] md:text-titleH3 font-bold leading-normal text-pretty'>Descargar CV</span>
+          <span className='text-secondary hidden xs:block  xs:text-[18px] sm:text-[24px] lg:text-titleH3 font-bold leading-normal text-pretty'>¡Haz clic y descubre mi CV!</span>
+          <span className='text-secondary block xs:hidden xs:text-[18px] sm:text-[24px] md:text-titleH3 font-bold leading-normal text-pretty'>Descarga mi CV aquí</span>
         </div>
     </a>
     </article>
