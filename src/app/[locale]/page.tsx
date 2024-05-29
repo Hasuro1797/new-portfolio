@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import Profile from "./components/Profile";
-import Language from "./components/Language";
-import DownloadCV from "./components/DownloadCV";
-import SocialComponent from "./components/SocialComponent";
+import Profile from "../components/Profile";
+import Language from "../components/Language";
+import DownloadCV from "../components/DownloadCV";
+import SocialComponent from "../components/SocialComponent";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import GitHubContainer from "./components/GitHubContainer";
-import Projects from "./components/Projects";
-import WorkExperience from "./components/WorkExperience";
-import LanguageCertification from "./components/LanguageCertification";
-import SkillComponent from "./components/SkillComponent";
-import EducationSection from "./components/EducationSection";
-import WeatherSection from "./components/WeatherSection";
-import ExperienceCard from "./components/ExperienceCard";
+import GitHubContainer from "../components/GitHubContainer";
+import Projects from "../components/Projects";
+import WorkExperience from "../components/WorkExperience";
+import LanguageCertification from "../components/LanguageCertification";
+import SkillComponent from "../components/SkillComponent";
+import EducationSection from "../components/EducationSection";
+import WeatherSection from "../components/WeatherSection";
+import ExperienceCard from "../components/ExperienceCard";
 
 
 export default function Home() {
