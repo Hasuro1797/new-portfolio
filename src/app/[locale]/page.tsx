@@ -1,18 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
-import Profile from "../components/Profile";
-import Language from "../components/Language";
-import DownloadCV from "../components/DownloadCV";
-import SocialComponent from "../components/SocialComponent";
+import BirthComponent from "@/components/BirthComponent";
+import SkeletonWeather from "@/components/skeleton/SkeletonWeather";
+import { Suspense } from "react";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import GitHubContainer from "../components/GitHubContainer";
-import Projects from "../components/Projects";
-import WorkExperience from "../components/WorkExperience";
-import LanguageCertification from "../components/LanguageCertification";
-import SkillComponent from "../components/SkillComponent";
-import EducationSection from "../components/EducationSection";
-import WeatherSection from "../components/WeatherSection";
-import ExperienceCard from "../components/ExperienceCard";
+import DownloadCV from "../../components/DownloadCV";
+import EducationSection from "../../components/EducationSection";
+import ExperienceCard from "../../components/ExperienceCard";
+import GitHubContainer from "../../components/GitHubContainer";
+import Language from "../../components/Language";
+import LanguageCertification from "../../components/LanguageCertification";
+import Profile from "../../components/Profile";
+import Projects from "../../components/Projects";
+import SkillComponent from "../../components/SkillComponent";
+import SocialComponent from "../../components/SocialComponent";
+import WeatherSection from "../../components/WeatherSection";
+import WorkExperience from "../../components/WorkExperience";
 
 
 export default function Home() {
@@ -55,7 +58,10 @@ export default function Home() {
         <img src="/assets/icons/skills_front_end.png" className="w-full" alt="icons-fron end" />
       </SkillComponent>
       {/* <div className="col-start-7 col-end-9 bg-red-500 rounded-lg">12</div> */}
-      <WeatherSection/>
+      <Suspense fallback={<SkeletonWeather/>}>
+        <WeatherSection/>
+      </Suspense>
+      <BirthComponent/>
     </section>
   </main>
   );

@@ -1,3 +1,37 @@
 {
-  "exp":"años de experiencia"
+  "Exp":{
+    "exp":"años de experiencia"
+  },
+  "Profile": {
+    "title": "Desarrollador Full Stack",
+    "descriptionOne": "Soy Manuel Villarroel. Explora mi portfolio y descubre soluciones web dinámicas y escalables. Con más de ",
+    "descriptionRelevance": "dos años de experiencia",
+    "descriptionTwo": ", estoy listo para llevar proyectos al siguiente nivel. ¡Conéctate conmigo para discutir tus necesidades!"
+  },
+  "CVDownload": {
+    "firstTitle": "¡Haz clic y descubre mi CV!",
+    "secondTitle": "Descargar mi CV aquí"
+  },
+  "Github": {
+    "title": "Mi código en GitHub"
+  },
+  "Projects": {
+    "title": "Proyectos y Pruebas",
+    "description": "Aquí tu puedes encontrar algunos de mis proyectos, pruebas o experimentos"
+  },
+  "WorkExp": {
+    "title": "Experiencia Laboral",
+    "description": "¡Descubre mi recorrido profesional!, espero que encuentres algo relevante para ti"
+  },
+  "Education": {
+    "title": "Educación",
+    "description": "Mi viaje educativo es más que solo adquirir conocimientos; es una travesía hacia el crecimiento personal y profesional"
+  },
+  "English": {
+    "title": "Nivel de inglés"
+  },
+  "Age": {
+    "title": "Edad",
+    "subtitle": "Años"
+  }
 }

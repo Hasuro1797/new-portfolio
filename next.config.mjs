@@ -10,9 +10,6 @@ const nextConfig = {
       use: [
         {
           loader: '@svgr/webpack',
-          options: {
-            // Aquí puedes agregar opciones de configuración para SVGR
-          },
         },
         {
           loader: 'file-loader',

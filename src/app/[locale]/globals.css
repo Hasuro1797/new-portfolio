@@ -4,15 +4,38 @@
 
 :root {
   --Primario-Primario-950: #222749;
-  --Secundario-400: #43D9BC;
+  --Secundario-400: #A6BFEA;
   --Primario-200: #CAD8F3;
 }
 body{
-  background-color: var(--Primario-Primario-950);
+  background-color: rgb(9, 13, 24);
 }
 
-.shadow-container{
-  box-shadow: 4px -2px 60px 10px rgba(0, 0, 0, 0.60);
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open .modal {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc40;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
 }
 
 .arrow-click{
@@ -35,4 +58,174 @@ body{
 .social-container:hover .social-icon{
   color: var(--Secundario-400);
   transition: ease-in 200ms;
+}
+
+.container-icon {
+  border-radius: 40%;
+  z-index: 120;
+}
+.night-icon {
+  position: relative;
+  background: linear-gradient(
+    to bottom right,
+    rgba(63, 81, 181, 1) 0%,
+    rgba(171, 71, 188, 1) 70%
+  );
+  box-shadow: 1px 1px 30px rgba(81, 45, 168, 1);
+}
+
+.night-icon li {
+  position: absolute;
+  list-style: none;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #fff;
+
+  transform: rotate(45deg);
+}
+.night-icon li:nth-child(1) {
+  top: 30%;
+  left: 65%;
+}
+
+.night-icon li:nth-child(2) {
+  top: 35%;
+  left: 53%;
+}
+
+.night-icon li:nth-child(3) {
+  opacity: 0;
+  top: 20%;
+  left: 75%;
+  width: 2px;
+  height: 2px;
+  animation: meteor 1.5s infinite linear;
+  animation-delay: 0.6s;
+}
+
+.night-icon li:nth-child(4) {
+  top: 5%;
+  left: 50%;
+}
+
+.night-icon li:nth-child(5) {
+  opacity: 0;
+  top: 20%;
+  left: 55%;
+  width: 1px;
+  height: 15px;
+  animation: meteor 1.5s infinite linear;
+}
+
+.moon {
+  position: absolute;
+  top: -10%;
+  left: 65%;
+  border-radius: 100%;
+  background: rgba(255, 241, 118, 1);
+  box-shadow: 1px 1px 30px rgba(224, 224, 224, 1);
+}
+.spot1 {
+  position: absolute;
+  top: 0%;
+  left: 85%;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #777;
+}
+.spot2 {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #777;
+}
+
+@keyframes meteor {
+  10% {
+    opacity: 1;
+  }
+  80% {
+    left: 10%;
+    top: 75%;
+    opacity: 0;
+  }
+}
+
+/*Sun*/
+.hot {
+  position: relative;
+  background: linear-gradient(
+    to top right,
+    rgba(255, 87, 34, 1) 0%,
+    rgba(251, 140, 0, 1) 100%
+  );
+  box-shadow: 1px 1px 30px rgba(255, 111, 0, 1);
+}
+
+.sun {
+  position: absolute;
+  top: -10%;
+  left: 65%;
+  border-radius: 100%;
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 235, 59, 1) 0%,
+    rgba(249, 168, 37, 1) 90%
+  );
+  box-shadow: 1px 1px 30px rgba(255, 160, 0, 1);
+  animation: inex 3s infinite linear;
+}
+
+.sunx {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+@keyframes inex {
+  50% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*Technologies*/
+.react {
+  background-color: #23272F;
+}
+.tailwind {
+  background-color: #003159;
+}
+.graphql {
+  background-color: #F6009C;
+}
+.strapi {
+  background-color: #4743FF;
+}
+.wordpress {
+  background-color: #156FAF;
+}
+.express {
+  background-color: #323232;
+}
+.next {
+  background-color: #08090B;
+}
+.stylecomponent {
+  background: -webkit-linear-gradient(90deg, #dd7f89,#db9175,#dba164);                                            
+}
+.redux {
+  background-color: #7A50BE;
+}
+.css3 {
+  background-color: #0899D2;
 }
