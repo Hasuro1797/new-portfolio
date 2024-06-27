@@ -8,6 +8,8 @@ export default function DownloadCV() {
     <article className='border-[1px] hover:scale-105 duration-200 shadow-inner border-primary-300 border-opacity-30 aspect-square rounded-2xl relative xl:col-start-7 xl:col-end-9 xl:row-start-3 xl:row-end-5 col-start-3 col-end-5 row-start-2 row-end-4 self-stretch shrink-0 overflow-hidden'>
     <a 
       href={t("link")}
+      target="_blank"
+      referrerPolicy="no-referrer"
       download={'CV-profesional'}
       className='relative h-full flex flex-col justify-between items-start download-container'>
         <div className='absolute opacity-10 -bottom-2 xxl:-bottom-0 -left-10 xs:-left-[80px] fileIcon'>
