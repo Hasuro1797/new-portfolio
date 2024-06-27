@@ -10,7 +10,8 @@
   },
   "CVDownload": {
     "firstTitle": "Click and discover my CV!",
-    "secondTitle": "Download my CV here"
+    "secondTitle": "Download my CV here",
+    "link": "https://drive.google.com/file/d/1-t_MItkr2JtyfU_x0tAxIY30Y6nAtxBR/view?usp=drive_link"
   },
   "Github": {
     "title": "My code on GitHub"
