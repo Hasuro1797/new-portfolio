@@ -6,7 +6,7 @@ export const workList = {
       company: "Agencia Fotosíntesis",
       tyOfOcupation: "Profesional independiente",
       date:{
-        since: "Actualmente",
+        since: "2024-07-01",
         until: "2024-06-01",
       },
       location: "Arequipa, Arequipa, Perú",
