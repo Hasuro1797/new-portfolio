@@ -95,7 +95,7 @@ export const projecList: ProyectListType = {
         }
       ],
       code: null,
-      link: "https://goar-website.onrender.com/"
+      link: "https://goar.pe/"
     },
     {
       id: 4,
@@ -129,9 +129,24 @@ export const projecList: ProyectListType = {
       type: "Project",
       technologies:[
         {
-          id: 2,
-          label: "Wordpress",
-          value: "wordpress"
+          id: 3,
+          label: "Next.js",
+          value: "next"
+        },
+        {
+          id: 8,
+          label: "Redux",
+          value: "redux"
+        },
+        {
+          id: 5,
+          label: "GraphQL",
+          value: "graphql"
+        },
+        {
+          id: 9,
+          label: "CSS3",
+          value: "css3"
         }
       ],
       code: null,
